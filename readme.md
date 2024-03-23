@@ -1,27 +1,5 @@
 
 
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-## Headers
-
-
-
-
-## JavaScript Snippets
-
-### Snippet 1: Active Inactive Nodej express
-
-
-
-### Snippet 2 : Delete api with integration 
-
-
-## Table of Contents
-
-
 
   
   ## Table of Contents
