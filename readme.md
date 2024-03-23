@@ -1,31 +1,12 @@
 
 
-# Table of Contents
-
-- [Headers](#headers)
-- [JavaScript Snippets](#javascript-snippets)
-
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
 ## Headers
 
-<!-- Content related to Headers -->
-
-## JavaScript Snippets
-
-<details>
-  <summary>Snippet 1: Active Inactive Node.js</summary>
-  <pre><code>
-/* JavaScript code for Snippet 1 */
-
-  </code></pre>
-</details>
-
-<details>
-  <summary>Snippet 2: Delete API with Integration</summary>
-  <pre><code>
-/* JavaScript code for Snippet 2 */
-// Place your JavaScript code here
-  </code></pre>
-</details>
 
 
 
@@ -149,3 +130,10 @@ const deleteFarmer = () => {
 ```
 
 
+<details>
+    <summary>Accordion_name</summary>
+    <pre><code class="language-javascript">
+// Your JavaScript code snippet goes here
+console.log("Hello, World!");
+    </code></pre>
+</details>
