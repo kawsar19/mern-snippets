@@ -5,3 +5,9 @@
 function greet(name) {
   return "Hello, " + name + "!";
 }
+
+### Snippet 1: Example JavaScript Function
+```javascript
+function greet(name) {
+  return "Hello, " + name + "!";
+}
