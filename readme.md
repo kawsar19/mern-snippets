@@ -89,11 +89,11 @@ const deleteFarmer = () => {
   
   ## Table of Contents
   
-  1. [Active Inactive](#section-1)
+  1. [Active Inactive Api](#active-inactive-api)
   2. [Section 2](#section-2)
   3. [Section 3](#section-3)
 
-## Active Inactive
+## Active Inactive Api
 
 ```javascript
 /* 1. Nodejs */
