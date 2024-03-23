@@ -155,6 +155,7 @@ router.put("/users/:id/status", jwtAuth, async (req, res) => {
     console.error("Error updating user status:", error);
     res.status(500).json({ success: false, message: "Failed to update user status." });
   }
-});
+}); 
+```
 
 </details>
