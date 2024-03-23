@@ -1,12 +1,31 @@
 
 
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
+# Table of Contents
+
+- [Headers](#headers)
+- [JavaScript Snippets](#javascript-snippets)
+
 ## Headers
 
+<!-- Content related to Headers -->
+
+## JavaScript Snippets
+
+<details>
+  <summary>Snippet 1: Active Inactive Node.js</summary>
+  <pre><code>
+/* JavaScript code for Snippet 1 */
+// Place your JavaScript code here
+  </code></pre>
+</details>
+
+<details>
+  <summary>Snippet 2: Delete API with Integration</summary>
+  <pre><code>
+/* JavaScript code for Snippet 2 */
+// Place your JavaScript code here
+  </code></pre>
+</details>
 
 
 
