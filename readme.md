@@ -130,32 +130,30 @@ const deleteFarmer = () => {
 ```
 
 
-<details>
-    <summary>Accordion_name</summary>
-```javascript
-/* 1. Nodejs */
-router.put("/users/:id/status", jwtAuth, async (req, res) => {
-  try {
-    // Check if the authenticated user is an admin
-    if (req.user.userType !== "admin") {
-      return res.status(403).json({ success: false, message: "Access denied." });
-    }
+## Table of Contents
 
-    const userId = req.params.id;
-    const { active } = req.body;
 
-    const user = await User.findByIdAndUpdate(userId, { $set: { active } }, { new: true });
 
-    if (!user) {
-      return res.status(404).json({ success: false, message: "User not found." });
-    }
+  
+  ## Table of Contents
+  
+  1. [Section 1](#section-1)
+  2. [Section 2](#section-2)
+  3. [Section 3](#section-3)
 
-    res.status(200).json({ success: true, message: "User status updated successfully." });
-  } catch (error) {
-    console.error("Error updating user status:", error);
-    res.status(500).json({ success: false, message: "Failed to update user status." });
-  }
-}); 
-```
+## Section 1
 
-</details>
+Content for section 1 goes here.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste, rerum tempore! Quasi, cupiditate corrupti. Voluptatum praesentium quasi ducimus unde facilis tenetur asperiores repellat itaque omnis laborum velit quaerat, sit id corporis explicabo reiciendis facere in. Maiores ducimus, non soluta ut ea error suscipit consequuntur. Quas ex, eos ducimus enim expedita repellendus! Adipisci necessitatibus fugiat dolor, fuga non ab, aliquam in omnis nihil numquam autem unde ea officiis, odit, impedit sint dolorem voluptatum sed. Consequuntur quia magnam nulla placeat fuga cum amet, aliquam inventore odit, laudantium omnis quod vel magni deserunt eveniet facilis quidem. Aspernatur totam unde temporibus velit nulla?
+
+
+## Section 2
+
+Content for section 2 goes here.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste, rerum tempore! Quasi, cupiditate corrupti. Voluptatum praesentium quasi ducimus unde facilis tenetur asperiores repellat itaque omnis laborum velit quaerat, sit id corporis explicabo reiciendis facere in. Maiores ducimus, non soluta ut ea error suscipit consequuntur. Quas ex, eos ducimus enim expedita repellendus! Adipisci necessitatibus fugiat dolor, fuga non ab, aliquam in omnis nihil numquam autem unde ea officiis, odit, impedit sint dolorem voluptatum sed. Consequuntur quia magnam nulla placeat fuga cum amet, aliquam inventore odit, laudantium omnis quod vel magni deserunt eveniet facilis quidem. Aspernatur totam unde temporibus velit nulla?
+
+
+## Section 3
+
+Content for section 3 goes here.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste, rerum tempore! Quasi, cupiditate corrupti. Voluptatum praesentium quasi ducimus unde facilis tenetur asperiores repellat itaque omnis laborum velit quaerat, sit id corporis explicabo reiciendis facere in. Maiores ducimus, non soluta ut ea error suscipit consequuntur. Quas ex, eos ducimus enim expedita repellendus! Adipisci necessitatibus fugiat dolor, fuga non ab, aliquam in omnis nihil numquam autem unde ea officiis, odit, impedit sint dolorem voluptatum sed. Consequuntur quia magnam nulla placeat fuga cum amet, aliquam inventore odit, laudantium omnis quod vel magni deserunt eveniet facilis quidem. Aspernatur totam unde temporibus velit nulla?
