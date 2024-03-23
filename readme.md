@@ -52,3 +52,69 @@ const handleActive = async (event, userId) => {
 ```
 
 
+### Snippet 2 : Delete api with integration 
+```javascript
+/* 1. Nodejs */
+router.delete("/users/:userId", jwtAuth, async (req, res) => {
+  try {
+    // Check if the user is an admin
+    if (req.user.userType !== "admin") {
+      // If the user is not an admin, send a 403 Forbidden response
+      return res.status(403).json({ success: false, message: "Access denied." });
+    }
+
+    const userId = req.params.userId;
+
+    // Find the user in the database
+    const user = await User.findById(userId);
+
+    // Check if the user exists
+    if (!user) {
+      return res.status(404).json({ success: false, message: "User not found." });
+    }
+
+    // Delete the user from the database
+    await User.findByIdAndDelete(userId);
+
+    res.status(200).json({ success: true, message: "User deleted successfully." });
+  } catch (error) {
+    console.error("Error deleting user:", error);
+    res.status(500).json({ success: false, message: "Failed to delete user." });
+  }
+}); 
+
+/* 2. react function */
+
+const deleteFarmer = () => {
+            axiosInstance.delete("/api/auth/users/"+ toBeDeletedUser._id).then(res => {
+                if (res.data?.success) {
+                    toast.success(` investor  '${toBeDeletedUser.name }'  Deleted!`);
+                    getAllUsers()
+                    setToBeDeletedUser(null);
+                    setOpen(false);
+                }
+            }).catch(e => {
+                if (e.response?.data) {
+                    toast.error(e.response.data.message);
+                } else {
+                    toast.error("Server Error!");
+                }
+            })
+        }
+    // call function 
+<Tooltip title="Delete User" arrow>
+                                            <IconButton
+                                              sx={{
+                                                '&:hover': { background: theme.palette.error.light },
+                                                color: theme.palette.error.main
+                                              }}
+                                              color="inherit"
+                                              size="small"
+                                              onClick={() => { setToBeDeletedUser(usr) }}
+                                            >
+                                              <DeleteTwoToneIcon fontSize="small" />
+                                            </IconButton>
+                                          </Tooltip>
+```
+
+
